@@ -40,14 +40,14 @@ class Manager extends Employee {
     }
     countedSalary() {
         let developersAmount = 0;
-        let solarka = super.countedSalary();
+        let zp = super.countedSalary();
         for (let item of this.team) {
             if (item.constructor.name == "Developer")  developersAmount++;
         }
-        if (this.team.length > 5 && this.team.length < 10) solarka += 200;
-        if (this.team.length >= 10 ) solarka += 300;
-        if (developersAmount > this.team.length / 2 ) solarka *= 1.1;
-        return solarka.toFixed();
+        if (this.team.length > 5 && this.team.length < 10) zp += 200;
+        if (this.team.length >= 10 ) zp += 300;
+        if (developersAmount > this.team.length / 2 ) zp *= 1.1;
+        return zp.toFixed();
         
     }
 }
